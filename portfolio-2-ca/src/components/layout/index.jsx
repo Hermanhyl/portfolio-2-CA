@@ -14,7 +14,7 @@ export default function Layout() {
   return (
     <div className="flex flex-col min-h-screen animated-bg text-white">
   <Header />
-  <main className="flex-grow pt-10 md:pt-20 backdrop-blur-sm bg-black/30">
+  <main className="flex-grow backdrop-blur-sm bg-black/30">
     <Outlet />
   </main>
   <Footer />

@@ -11,12 +11,24 @@ function Header() {
         </Link>
 
         {/* Navigation (expand as needed) */}
-        <nav className="hidden md:flex space-x-6 text-sm uppercase tracking-wider">
+        <nav className="hidden md:flex space-x-10 text-sm uppercase tracking-wider">
           <Link
             to="/"
             className="text-gray-300 text-lg font-medium hover:text-cyan-400 transition duration-200"
           >
             Home
+          </Link>
+          <Link
+            to="/about"
+            className="text-gray-300 text-lg font-medium hover:text-cyan-400 transition duration-200"
+          >
+            About
+          </Link>
+          <Link
+            to="/contact"
+            className="text-gray-300 text-lg font-medium hover:text-cyan-400 transition duration-200"
+          >
+            Contact
           </Link>
           {/* Add more links here later, like About, Contact, etc. */}
         </nav>
