@@ -8,16 +8,16 @@ function Footer() {
         <p className="text-sm tracking-wider">
           Follow on{" "}
           <a
-            href="https://twitter.com"
+            href="https://www.instagram.com/hermanhyl98/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-cyan-400 hover:underline"
           >
-            Twitter
+            Instagram
           </a>{" "}
           and{" "}
           <a
-            href="https://github.com"
+            href="https://github.com/Hermanhyl"
             target="_blank"
             rel="noopener noreferrer"
             className="text-cyan-400 hover:underline"
