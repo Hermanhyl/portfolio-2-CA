@@ -32,9 +32,15 @@ function ProjectDetail() {
           <strong>Technologies Used:</strong>
         </p>
         <ul className="list-disc list-inside text-lg text-gray-300">
-          {project.technologies.map((tech, index) => (
-            <li key={index}>{tech}</li>
-          ))}
+          {project.technologies && (
+            <div className="mt-6 mb-8">
+              <ul className="list-disc list-inside text-lg text-gray-300">
+                {project.technologies.map((tech, index) => (
+                  <li key={index}>{tech}</li>
+                ))}
+              </ul>
+            </div>
+          )}
         </ul>
       </div>
 
