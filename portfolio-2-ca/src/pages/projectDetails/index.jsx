@@ -1,5 +1,6 @@
 import { useParams, useNavigate } from "react-router-dom";
-import { projects } from "../data/projects";
+import { projects } from "../../data/projects/projects";
+
 
 function ProjectDetail() {
   const { id } = useParams();
@@ -11,9 +12,9 @@ function ProjectDetail() {
   }
 
   return (
-    <div className="max-w-3xl mx-auto px-4 py-10">
+    <div className="max-w-3xl mx-auto px-4 py-20">
       <h2 className="text-3xl font-bold mb-4">{project.title}</h2>
-      <p className="text-gray-300 mb-6">{project.description}</p>
+      <p className="text-gray-300 text-lg mb-6">{project.description}</p>
 
       <div className="space-y-4 mb-8">
         {project.images.map((src, index) => (
@@ -24,6 +25,17 @@ function ProjectDetail() {
             className="rounded-xl w-full object-cover"
           />
         ))}
+      </div>
+
+      <div className="mt-6 mb-8">
+        <p className="text-white text-xl font-medium mb-2">
+          <strong>Technologies Used:</strong>
+        </p>
+        <ul className="list-disc list-inside text-lg text-gray-300">
+          {project.technologies.map((tech, index) => (
+            <li key={index}>{tech}</li>
+          ))}
+        </ul>
       </div>
 
       <div className="flex gap-4">
